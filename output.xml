@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.7 on win32)" generated="2025-03-04T05:35:11.341984" rpa="false" schemaversion="5">
+<suite id="s1" name="FIRST TEST CASE" source="E:\Phoenix Drive\ROBOT_FRAMEWORK\FIRST_TEST_CASE.robot">
+<test id="s1-t1" name="Verify OrangeHRM Login Page Title" line="20">
+<kw name="Open OrangeHRM Login Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-04T05:35:11.755953" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-04T05:35:11.755953" elapsed="6.130258"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-04T05:35:20.887334" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-04T05:35:17.887213" elapsed="3.000121"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-04T05:35:20.887334" elapsed="0.036274"/>
+</kw>
+<status status="PASS" start="2025-03-04T05:35:11.754955" elapsed="9.169651"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-04T05:35:23.925640" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-04T05:35:20.924606" elapsed="3.001034"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2025-03-04T05:35:23.939641" level="INFO">${title} = OrangeHRM</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-03-04T05:35:23.926638" elapsed="0.013003"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${title}</arg>
+<arg>${EXPECTED_TITLE}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-03-04T05:35:23.956641" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-04T05:35:23.957640" elapsed="0.000999"/>
+</kw>
+<kw name="Close Browser Session">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-03-04T05:35:23.959644" elapsed="3.938485"/>
+</kw>
+<status status="PASS" start="2025-03-04T05:35:23.959644" elapsed="3.939485"/>
+</kw>
+<status status="PASS" start="2025-03-04T05:35:11.752968" elapsed="16.147156"/>
+</test>
+<status status="PASS" start="2025-03-04T05:35:11.346991" elapsed="16.555138"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="FIRST TEST CASE">FIRST TEST CASE</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
